@@ -1,11 +1,23 @@
+/* El ancho del sitio será el 100% del ancho
+de la pantalla del dispositivo */
+
 body {
 	width: 100%;
+	margin-left: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+/* Posición fixed para que la barra de navegación
+se mantenga en el mismo lugar cuando nos movemos
+por el sitio */
 nav {
 	width: 100%;
-	height: 65px;
-	text-transform: uppercase;
+	height: 64px;
 	font-family: Montserrat, sans-serif;
 	font-weight: 700;
 	background-color: #2C3E50;
@@ -14,6 +26,7 @@ nav {
 	top: 0;
 	left: 0;
 	line-height: 36px;
+	z-index: 2;
 }
 
 nav h1 {
@@ -23,19 +36,30 @@ nav h1 {
 	top: -5px;
 }
 
+nav h1 a {
+	text-decoration: none;
+	color: white;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	right: 130px;
+	right: 125px;
 	top: 6px;
+	text-transform: uppercase;
 }
 
+/* Como apliqué float:right, me aseguré de colocar
+la lista a la inversa. Es decir, en html el primer
+elemento es Contact, pero en el resultado final del
+sitio se verá como el tercer elemento */
 nav ul li {
 	float: right;
 }
-
+/*Display Block para que toda la caja sea el enlace
+y no sólo el texto */
 li a {
 	text-decoration: none;
 	display: block;
@@ -44,4 +68,48 @@ li a {
 	top: 0;
 	padding: 8px;
 	letter-spacing: 1px;
+}
+/* Margen del mismo tamaño que la barra de navegación
+para que no quede parte del header escondido detrás de la
+barra */
+header {
+	width: 100%;
+	height: 630px;
+	background-color: #18BC9C;
+	margin-top: 64px;
+	color: white;
+	overflow: hidden;
+}
+
+/* Dejando derecha e izquierda en posición 0, se crea
+un conflicto, que auto resuelve al ubicar el elemento
+en el medio de la caja en donde está ubicado */
+#profile {
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 70px;
+}
+
+/*z-index 1 para que quede debajo de la barra de
+navegación */
+#content {
+	width: 70%;
+	height: 580px;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin-top: 93px;
+	z-index: 1;
+}
+
+#content h1 {
+	position: absolute;
+	top: 310px;
+	font-size: 76px;
+	left: 102px;
 }
