@@ -74,7 +74,7 @@ para que no quede parte del header escondido detrás de la
 barra */
 header {
 	width: 100%;
-	height: 650px;
+	height: 695px;
 	background-color: #18BC9C;
 	padding-top: 64px;
 	color: white;
@@ -103,7 +103,7 @@ navegación */
 	left: 0;
 	top: 0;
 	bottom: 0;
-	margin-top: 93px;
+	margin-top: 92px;
 	z-index: 1;
 }
 
@@ -151,7 +151,7 @@ navegación */
 
 #portfolio {
 	width: 100%;
-	height: 630px;
+	height: 650px;
 	background-color: white;
 	padding-top: 60px;
 }
@@ -184,6 +184,21 @@ section h2 {
 
 #portfolio-title {
 	padding-left: 544px;
+}
+
+#images {
+	margin-top: 46px;
+	margin-left: 110px;
+}
+
+figure {
+	display: inline-block;
+	margin: 13px;
+}
+
+#portfolio img {
+	max-width: 350px;
+
 }
 
 
