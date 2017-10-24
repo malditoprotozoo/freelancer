@@ -8,64 +8,137 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+		
 	</head>
 	<body>
-		<nav>
-			<h1><a href="#">Start Bootstrap</a></h1>
-			<ul>
-				<li><a href="">Contact</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-			</ul>
-		</nav>
-		<header>
-			<!-- La imagen debe ir dentro de otra caja, para poder ubicar el texto máś fácilmente bajo la misma -->
-			<div id="content">
-				<img src="assets/images/profile.png" alt="" id="profile">
-				<h1>Start Bootstrap</h1>
-				<div id="symbol">
-					<div class="line"></div>
-					<i class="fa fa-star" aria-hidden="true"></i>
-					<div class="line"></div>
+		<div id="container">
+			<nav>
+				<h1><a href="#">Start Bootstrap</a></h1>
+				<ul>
+					<li><a href="">Contact</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+				</ul>
+			</nav>
+			<header>
+				<!-- La imagen debe ir dentro de otra caja, para poder ubicar el texto máś fácilmente bajo la misma -->
+				<div id="content">
+					<img src="assets/images/profile.png" alt="" id="profile">
+					<h1>Start Bootstrap</h1>
+					<div id="symbol">
+						<div class="line"></div>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<div class="line"></div>
+					</div>
+					<div id="text">
+						<p class="description">Web Developer - Graphic Artist - User Experience Designer</p>
+					</div>
 				</div>
-				<div id="text">
-					<p class="description">Web Developer - Graphic Artist - User Experience Designer</p>
-				</div>
-			</div>
-		</header>
-
-		<section id="portfolio">
-			<!-- Como el título y el símbolo deben estar al medio, mientras las imágenes irán pegadas al margen, es mejor crear una nueva caja que contenga el título en cuestión y así aplicarle sólo a #portfolio-title el padding a la izquierda que requiere -->
-			<div id="portfolio-title">
-				<h2>Portfolio</h2>
-				<div id="symbol-2">
+			</header>
+			<section id="portfolio">
+				<!-- Como el título y el símbolo deben estar al medio, mientras las imágenes irán pegadas al margen, es mejor crear una nueva caja que contenga el título en cuestión y así aplicarle sólo a #portfolio-title el padding a la izquierda que requiere -->
+				<div id="portfolio-title">
+					<h2>Portfolio</h2>
+					<div id="symbol-2">
 						<div class="line-2"></div>
 						<i class="fa fa-star" aria-hidden="true"></i>
 						<div class="line-2"></div>
 					</div>
-			</div>
-			<div id="images">
-				<figure>
-					<img src="assets/images/portfolio/cabin.png" alt="">
-				</figure>
-				<figure>
-					<img src="assets/images/portfolio/cake.png" alt="">
-				</figure>
-				<figure>
-					<img src="assets/images/portfolio/circus.png" alt="">
-				</figure>
-				<figure>
-					<img src="assets/images/portfolio/game.png" alt="">
-				</figure>
-				<figure>
-					<img src="assets/images/portfolio/safe.png" alt="">
-				</figure>
-				<figure>
-					<img src="assets/images/portfolio/submarine.png" alt="">
-				</figure>
-			</div>
-
-		</section>
-		
+				</div>
+				<div id="images">
+					<figure>
+						<img src="assets/images/portfolio/cabin.png" alt="">
+					</figure>
+					<figure>
+						<img src="assets/images/portfolio/cake.png" alt="">
+					</figure>
+					<figure>
+						<img src="assets/images/portfolio/circus.png" alt="">
+					</figure>
+					<figure>
+						<img src="assets/images/portfolio/game.png" alt="">
+					</figure>
+					<figure>
+						<img src="assets/images/portfolio/safe.png" alt="">
+					</figure>
+					<figure>
+						<img src="assets/images/portfolio/submarine.png" alt="">
+					</figure>
+				</div>
+			</section>
+			<section id="about">
+				<div id="about-title">
+					<h2>About</h2>
+					<div id="symbol-3">
+						<div class="line"></div>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<div class="line"></div>
+					</div>
+				</div>
+				
+				<div id="about-text">
+					<p>
+						Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+					</p>
+					<p>
+						Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+					</p>
+				</div>
+				<div id="download-button">
+					<i class="fa fa-download" aria-hidden="true"></i>
+					<span>Download Theme</span>
+				</div>
+			</section>
+			<section id="contact">
+				<div id="contact-title">
+					<h2>Contact Me</h2>
+					<div id="symbol-4">
+						<div class="dark-line"></div>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<div class="dark-line"></div>
+					</div>
+				</div>
+				<div id="form">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email Address">
+					<input type="tel" name="phone" placeholder="Phone Number">
+					<textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+				</div>
+				<button type="submit">Send</button>
+			</section>
+			
+			<footer>
+				<div id="location">
+					<h3>Location</h3>
+					<p>3481 Melrose Place</p>
+					<p>Beverly Hills, CA 90210</p>
+				</div>
+				<div id="social-net">
+					<h3>Around the web</h3>
+					<div class="circle">
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+					<div class="circle">
+						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+					<div class="circle">
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>
+					<div class="circle">
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+					<div class="circle">
+						<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div id="about-foot">
+					<h3>About freelancer</h3>
+					<p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+				</div>
+				<div id="copyright">
+					<p>Copyright © Your Website 2017</p>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
