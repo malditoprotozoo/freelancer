@@ -1,9 +1,12 @@
+/* Resolución de pantalla: 1366 x 768 (16:9) */
+
 /* El ancho del sitio será el 100% del ancho
 de la pantalla del dispositivo */
 
 body {
 	width: 100%;
 	margin-left: 0;
+	margin-bottom: 0;
 }
 
 #container {
@@ -74,6 +77,11 @@ li a {
 	padding: 8px;
 	letter-spacing: 1px;
 }
+
+li a:hover {
+	color: #18BC9C;
+}
+
 /* Padding-top del mismo tamaño que la barra de navegación
 para que no quede parte del header escondido detrás de la
 barra */
@@ -351,12 +359,20 @@ input {
 
 footer {
 	width: 100%;
-	height: 345px;
+	height: 340px;
 	background-color: #2C3E50;
 	color: white;
 	font-size: 25px;
 	padding-top: 15px;
-	position: absolute;
+}
+
+#foot-container {
+	width: 1100px;
+	height: 219px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-left: 105.500px;
+	margin-right: 105.500px;
 }
 
 footer p {
@@ -368,32 +384,40 @@ footer p {
 	margin-bottom: 0;
 }
 
-#location {
-	width: 28%;
-	height: 130px;
-	display: inline-block;
+footer h3 {
+	font-size: 28px;
+	line-height: 34px;
 	text-align: center;
-	margin-left: 100px;
+}
+
+#location {
+	width: 300px;
+	height: 130px;
+	position: absolute;
+	left: 150px;
 }
 
 #social-net {
-	width: 28%;
+	width: 340px;
 	height: 130px;
-	display: inline-block;
+	position: absolute;
 	text-align: center;
-	margin-top: 0px;
+	left: 500px;
 }
 
 #social-net a {
 	text-decoration: none;
 	color: white;
-	line-height: 50px;
+	line-height: 46.5px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50%;
 }
 
 .circle {
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 46.5px;
+	height: 46.5px;
 	border: 2px solid white;
 	display: inline-block;
 	text-align: center;
@@ -401,18 +425,24 @@ footer p {
 	margin-top: 20px;
 }
 
-#about-foot {
-	width: 28%;
-	height: 130px;
-	display: inline-block;
-	text-align: center;
+#social-net a:hover {
+	color: #18BC9C;
+	background-color: white;
 }
 
-
+#about-foot {
+	width: 340px;
+	position: absolute;
+	right: 135px;
+}
 
 #copyright {
-	width: 100%;
-	text-align: center;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
+#copyright p {
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
