@@ -196,7 +196,7 @@ navegación */
 }
 
 #images {
-	margin-top: 46px;
+	margin-top: 15px;
 	margin-left: 110px;
 }
 
@@ -205,9 +205,58 @@ figure {
 	margin: 13px;
 }
 
-#portfolio img {
-	max-width: 350px;
+#img-cabin {
+	background-image: url('../assets/images/portfolio/cabin.png');
+}
 
+#img-cake {
+	background-image: url('../assets/images/portfolio/cake.png');
+}
+
+#img-circus {
+	background-image: url('../assets/images/portfolio/circus.png');
+}
+
+#img-game {
+	background-image: url('../assets/images/portfolio/game.png');
+}
+
+#img-safe {
+	background-image: url('../assets/images/portfolio/safe.png');
+}
+
+#img-submarine {
+	background-image: url('../assets/images/portfolio/submarine.png');
+}
+
+figure.portfolio-img {
+	width: 350px;
+	height: 252.767px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+figure.portfolio-img .overlay {
+	background-color: rgba(24,188,156,.9);
+	width: 350px;
+	height: 252.766px;
+	opacity: 0;
+	cursor: pointer;
+	transition: .5s all;   
+    transition-delay: 0.1s;
+    text-align: center;
+}
+
+.fa-search-plus {
+	font-size: 3em;
+	color: white;
+	margin-top: 105px;
+}
+
+figure.portfolio-img .overlay:hover {
+	transition: all .5s ease;
+	opacity: 1;
 }
 
 #about {
