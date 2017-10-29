@@ -6,75 +6,30 @@
 
 ***
 
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
-
 ## Objetivo
 
-El reto consiste en replicar el sitio de **Freelancer**, este será el resultado
-a lograr:
+En este reto se nos pidió replicar la maquetación del template **Freelancer** de *Bootstrap*. Este debía ser el resultado final:
 
 ![Freelancer Website](docs/fullpage.png)
 
-## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+## Flujo de trabajo
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto.
+Para cumplir con el objetivo, partí por dividir el sitio en diversas secciones, usando tanto las etiquetas `div` como los nuevos elementos semánticos de HTML5:
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+* `#container`: Contenedor que abarca todo el sitio.
+* `nav`: Barra de navegación.
+* `header`: El logo, título y descripción general de Freelancer.
+* `section #portfolio`: Como el nombre lo indica, la sección en dónde se muestra el portafolio.
+* `section #about`: Descripción más completa de Freelancer más el botón de descarga.
+* `section #contact`: Formulario de contacto.
+* `footer`: Parte inferior de la estructura web.
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
+Cada sección a su vez contiene otras "cajas" que fueron usadas para encajar de mejor manera el contenido.
 
-* Esta web utiliza 2 tipografías: `Montserrat` y `Lato`.
+### Desafíos
 
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes: `#2c3e50`, `#18bc9c`,
-  `#212529`.
+* **Línea Horizontal:** Freelancer cuenta con una línea horizontal que se compone de dos líneas separadas por una estrella en medio. Se usa para subrayar las principales secciones del sitio. En mi caso, la creé haciendo varios `div` con la clase `.line`, que en CSS contenía las indicaciones correspondientes de tamaño y color. Hice la estrella usando un cáracter de *Font Awesome*.
 
-* Los íconos de redes sociales puedes obtenerlos de [Font Awesome](http://fontawesome.io/).
 
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios). No te preocupes, estamos seguros que lo afrontarás con
-  éxito, de igual forma aquí unos tips:
-
-  - Para el formulario, revisa las etiquetas como `form`, `input`, `button`.
-
-* El subrayado que incluye la estrella en las diversas secciones del sitio, en
-  la web original se hace con un ícono y pseudoelementos (`:after`, `:before`),
-  es un reto entretenido, sin embargo, no trates de enfocarte en esa parte desde
-  un inicio ya que no es el objetivo principal del reto :)
-
-* Puedes ver el [sitio original](https://blackrockdigital.github.io/startbootstrap-freelancer/)
-  para que te des una idea de como debe quedar.
-
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
-
-## A tener en cuenta
-
-Este reto será evaluado sobre lo siguiente:
-
-* Pixel perfect (replicar el diseño con exactitud)
-* Nombramiento de clases, id, etc
-* Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible
+* **Efectos de hover en `#portfolio`:** A pesar de que no se nos solicitó, quise encontrar una forma de replicar los efectos del sitio original en las imágenes de esta sección. Al principio consideré la opción de usar Javascript, pero finalmente me decanté por averiguar cómo hacerlo en CSS. En lugar de colocar las imágenes directamente en el sitio cómo había hecho en un principio, lo que hice fue crear elementos `figure` del tamaño correspondiente y como valor de `background` añadir cada una de las imágenes. Luego, dentro de cada `figure` añadí un nuevo elemento con la clase llamada `.overlay`. A `.overlay` le di un valor de opacidad de 0, el mismo tamaño que su contenedor, fondo de color verde agua con algo de transparencia (usando RGBa) y dentro de este inserté el elemento `i` con la clase correspondiente al símbolo usado en el sitio original que llama al ícono de *Font Awesome*. Al hacer *hover* sobre `.overlay` este aumenta su opacidad por completo con una breve transición. El efecto quedó bastante parecido.
