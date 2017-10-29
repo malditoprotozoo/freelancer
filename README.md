@@ -33,3 +33,7 @@ Cada sección a su vez contiene otras "cajas" que fueron usadas para encajar de 
 
 
 * **Efectos de hover en `#portfolio`:** A pesar de que no se nos solicitó, quise encontrar una forma de replicar los efectos del sitio original en las imágenes de esta sección. Al principio consideré la opción de usar Javascript, pero finalmente me decanté por averiguar cómo hacerlo en CSS. En lugar de colocar las imágenes directamente en el sitio cómo había hecho en un principio, lo que hice fue crear elementos `figure` del tamaño correspondiente y como valor de `background` añadir cada una de las imágenes. Luego, dentro de cada `figure` añadí un nuevo elemento con la clase llamada `.overlay`. A `.overlay` le di un valor de opacidad de 0, el mismo tamaño que su contenedor, fondo de color verde agua con algo de transparencia (usando RGBa) y dentro de este inserté el elemento `i` con la clase correspondiente al símbolo usado en el sitio original que llama al ícono de *Font Awesome*. Al hacer *hover* sobre `.overlay` este aumenta su opacidad por completo con una breve transición. El efecto quedó bastante parecido.
+
+### Resolución de Pantalla
+
+Template realizado en una laptop con resolución de pantalla **1366 x 768 (16:9).**
